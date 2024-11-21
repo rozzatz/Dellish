@@ -224,6 +224,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Dellish_Idle1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 179
+        width: 102
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f704183709d774fa78844d6f1b221c
+      internalID: 97401122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -235,6 +256,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Dellish_Idle1: 97401122
       tiles_far_desert_blank: 600067314
       tiles_far_desert_front: -1151399284
       tiles_far_desert_ground: -443107107
