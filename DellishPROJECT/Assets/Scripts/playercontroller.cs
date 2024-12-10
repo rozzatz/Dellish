@@ -98,10 +98,10 @@ public class playercontroller : MonoBehaviour
         }
     }
 
-    void ChangeHealth(int amount)
+    public void ChangeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        
+
 
     }
 }

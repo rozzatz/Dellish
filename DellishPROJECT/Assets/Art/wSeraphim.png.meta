@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fe11e38df5f3ea541b893ea7dd8ead14
+guid: f47fe5a74d82fe446a91973744441527
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -49,7 +49,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 21, y: 185, z: 1342, w: 853}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -120,19 +120,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: VisionOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -175,55 +162,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dellish_UI_HEARTSCONTAINERS
+      name: Seraphim1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 177
-        width: 447
-        height: 176
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4b571b778a5e61740bb9edf05532f08b
-      internalID: -2121298711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: dellish_UI_0
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 6
-        width: 447
-        height: 176
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc5c23a74fb01f346bac97af13ee9185
-      internalID: 1047112324
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: redfill
-      rect:
-        serializedVersion: 2
-        x: 356
-        y: 65
-        width: 71
-        height: 68
+        x: 352
+        y: 187
+        width: 697
+        height: 554
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb2d107090b9d5a4a8fd6934b029bcc0
-      internalID: -542514082
+      spriteID: 4ea9f68a011d51e4f8e662be1a79d88c
+      internalID: 1497429214
       vertices: []
       indices: 
       edges: []
@@ -241,17 +186,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dellish_UI_0: 1047112324
-      dellish_UI_HEARTCONTAINERS: 588650178
-      dellish_UI_HEARTSCONTAINERS: -2121298711
-      redfill: -542514082
+      Seraphim1: 1497429214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
