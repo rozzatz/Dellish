@@ -1,0 +1,3 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="HealthBarBackground" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Art/dellish_UI.png?fileID=588650178&amp;guid=fe11e38df5f3ea541b893ea7dd8ead14&amp;type=3#dellish_UI_HEARTCONTAINERS&quot;); -unity-background-scale-mode: scale-to-fit; overflow: visible; width: 176px; height: 66px; position: relative; flex-direction: column; justify-content: space-around; left: initial;" />
+</ui:UXML>

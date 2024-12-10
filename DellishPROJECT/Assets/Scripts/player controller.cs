@@ -13,6 +13,8 @@ public class playercontroller : MonoBehaviour
     bool Invincible = false;
     float invinvibleTimer = 2f;
     public bool GameOver = false;
+    public int maxHealth = 3;
+    int currentHealth;
 
     // Customizable key bindings
     public KeyCode moveLeftKey = KeyCode.A;
@@ -21,6 +23,7 @@ public class playercontroller : MonoBehaviour
 
     void Start()
     {
+        currentHealth = maxHealth;
         // Initialize Rigidbody2D
         Rb = GetComponent<Rigidbody2D>();
     }
@@ -93,5 +96,12 @@ public class playercontroller : MonoBehaviour
         {
             GameOver = true;
         }
+    }
+
+    void ChangeHealth(int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        debug.Log(currentHealth + "/" + maxHealth);
+
     }
 }

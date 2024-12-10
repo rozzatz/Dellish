@@ -1,3 +1,6 @@
 # Dellish
 
 Unity version 2022.3
+
+Courtesy to aaaleee on unity (https://github.com/aaaleee/UnityScanlinesEffect) for the scanline effects used.
+Note: This tutorial is proving useful for me (https://learn.unity.com/course/2d-beginner-adventure-game?uv=2022.3) which is an "updated" Ruby's Adventure, used for the health UI.
