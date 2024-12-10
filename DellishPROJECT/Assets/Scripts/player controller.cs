@@ -101,7 +101,7 @@ public class playercontroller : MonoBehaviour
     void ChangeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-        debug.Log(currentHealth + "/" + maxHealth);
+        
 
     }
 }
