@@ -11,7 +11,7 @@ public class SERAPHIMSCRIPT : MonoBehaviour
     public ParticleSystem holyEffect;
 
     public Rigidbody2D rigidbody2D;
-    Animator animator;
+    //Animator animator;
     float timer;
     int direction = 1;
     bool broken = true;
@@ -23,7 +23,7 @@ public class SERAPHIMSCRIPT : MonoBehaviour
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -52,14 +52,14 @@ public class SERAPHIMSCRIPT : MonoBehaviour
         if (vertical)
         {
             position.y = position.y + Time.deltaTime * speed * direction; ;
-            animator.SetFloat("Move X", 0);
-            animator.SetFloat("Move Y", direction);
+            //animator.SetFloat("Move X", 0);
+            //animator.SetFloat("Move Y", direction);
         }
         else
         {
             position.x = position.x + Time.deltaTime * speed * direction; ;
-            animator.SetFloat("Move X", direction);
-            animator.SetFloat("Move Y", 0);
+            //animator.SetFloat("Move X", direction);
+            //animator.SetFloat("Move Y", 0);
         }
 
         rigidbody2D.MovePosition(position);
@@ -78,7 +78,7 @@ public class SERAPHIMSCRIPT : MonoBehaviour
     {
         broken = false;
         rigidbody2D.simulated = false;
-        animator.SetTrigger("Fixed");
+        //animator.SetTrigger("Fixed");
         holyEffect.Stop();
     }
 }
