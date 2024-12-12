@@ -8,8 +8,6 @@ public class SERAPHIMSCRIPT : MonoBehaviour
     public bool vertical;
     public float changeTime = 3.0f;
 
-    public ParticleSystem holyEffect;
-
     public Rigidbody2D rigidbody2D;
     //Animator animator;
     float timer;
@@ -72,13 +70,5 @@ public class SERAPHIMSCRIPT : MonoBehaviour
         {
             controller.ChangeHealth(-1);
         }
-    }
-
-    public void Fix()
-    {
-        broken = false;
-        rigidbody2D.simulated = false;
-        //animator.SetTrigger("Fixed");
-        holyEffect.Stop();
     }
 }
