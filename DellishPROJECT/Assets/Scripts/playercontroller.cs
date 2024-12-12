@@ -9,7 +9,7 @@ public class playercontroller : MonoBehaviour
     public float JumpForce = 10f;
     bool IsOnGround = true;
     public Rigidbody2D Rb;
-    public float health = 5;
+    public float health = 3f;
     bool Invincible = false;
     float invinvibleTimer = 2f;
     public bool GameOver = false;
@@ -56,7 +56,7 @@ public class playercontroller : MonoBehaviour
             }
         }
 
-        if (health < 1)
+        if (currentHealth < 1)
         {
             HandleGameOver();
         }
@@ -88,6 +88,7 @@ public class playercontroller : MonoBehaviour
         SceneManager.LoadScene(0); // Reload the scene to restart the game
     }
 
+
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
@@ -100,11 +101,19 @@ public class playercontroller : MonoBehaviour
             ChangeHealth(-1);
             Invincible = true;
             invinvibleTimer = 2f; // Reset invincibility timer
+            Debug.Log("health is" + currentHealth);
         }
+
+        if (collision.gameObject.CompareTag("Death") && !Invincible)
+        {
+            HandleGameOver();
+        }
+
     }
 
     public void ChangeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
     }
+
 }

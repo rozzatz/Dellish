@@ -1,74 +1,52 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class SERAPHIMSCRIPT : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
-    public float speed;
-    public bool vertical;
-    public float changeTime = 3.0f;
+    public Transform player;  // Reference to the player object
+    public float moveSpeed = 2f;  // Speed at which the enemy moves toward the player
+    public float detectionRange = 5f;  // Range within which the enemy detects the player
+    private Vector3 startPosition;  // The original position of the enemy
+    private bool playerIsMoving = false;  // Flag to check if player is moving
+    private Rigidbody2D rb;  // Enemy's Rigidbody2D for movement
 
-    public Rigidbody2D rigidbody2D;
-    //Animator animator;
-    float timer;
-    int direction = 1;
-    bool broken = true;
-
-    playercontroller controller;
 
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
-        timer = changeTime;
-        //animator = GetComponent<Animator>();
-    }
-
-    private void Update()
-    {
-        if (!broken)
-        {
-            return;
-        }
-
-        timer -= Time.deltaTime;
-        if (timer < 0)
-        {
-            direction = -direction;
-            timer = changeTime;
-        }
+        rb = GetComponent<Rigidbody2D>();  // Initialize the Rigidbody2D
+        startPosition = transform.position;  // Save the enemy's starting position
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (!broken)
+        // Check if the player is moving
+        playerIsMoving = Mathf.Abs(player.GetComponent<Rigidbody2D>().velocity.x) > 0.1f || Mathf.Abs(player.GetComponent<Rigidbody2D>().velocity.y) > 0.1f;
+
+        // If the player is moving, the enemy doesn't follow
+        if (!playerIsMoving)
         {
-            return;
+            FollowPlayer();
         }
-        Vector2 position = rigidbody2D.position;
-        if (vertical)
+    }
+
+    void FollowPlayer()
+    {
+        // Check if the player is within detection range
+        if (Vector2.Distance(transform.position, player.position) < detectionRange)
         {
-            position.y = position.y + Time.deltaTime * speed * direction; ;
-            //animator.SetFloat("Move X", 0);
-            //animator.SetFloat("Move Y", direction);
+            // Move towards the player
+            Vector2 direction = (player.position - transform.position).normalized;
+            rb.velocity = direction * moveSpeed;
         }
         else
         {
-            position.x = position.x + Time.deltaTime * speed * direction; ;
-            //animator.SetFloat("Move X", direction);
-            //animator.SetFloat("Move Y", 0);
-        }
-
-        rigidbody2D.MovePosition(position);
-    }
-
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        playercontroller player = other.gameObject.GetComponent<playercontroller>();
-        if (player != null)
-        {
-            controller.ChangeHealth(-1);
+            // Return to the starting position if the player is out of range
+            Vector2 direction = (startPosition - transform.position).normalized;
+            rb.velocity = direction * moveSpeed;
         }
     }
-}
+
+   
+    
+    }
