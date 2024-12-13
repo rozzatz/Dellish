@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Wall
   - Win
+  - Playa
   layers:
   - Default
   - TransparentFX

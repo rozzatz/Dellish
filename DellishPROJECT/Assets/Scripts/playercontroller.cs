@@ -109,6 +109,7 @@ public class playercontroller : MonoBehaviour
             HandleGameOverW();
         }
 
+
         if (collision.gameObject.CompareTag("Enemy") && !Invincible)
         {
             ChangeHealth(-1);
