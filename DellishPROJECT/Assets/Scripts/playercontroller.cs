@@ -116,6 +116,8 @@ public class playercontroller : MonoBehaviour
             Invincible = true;
             invinvibleTimer = 2f; // Reset invincibility timer
             Debug.Log("health is" + currentHealth);
+            colorchange();
+
         }
 
         if (collision.gameObject.CompareTag("Death") && !Invincible)
@@ -130,4 +132,11 @@ public class playercontroller : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
     }
 
+    IEnumerator colorchange()
+        {
+    Color originalcolor = spriteRenderer.color;
+    spriteRenderer.color = Color.blue;
+    yield return new WaitForSeconds(.5f);
+    spriteRenderer.color = originalcolor;
+        }
 }

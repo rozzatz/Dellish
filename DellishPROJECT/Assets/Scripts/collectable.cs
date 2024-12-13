@@ -7,7 +7,7 @@ public class collectable : MonoBehaviour
     public float coin;
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Playa"))
         {
             coin = coin + 1;
 
