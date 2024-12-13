@@ -8,6 +8,7 @@ TagManager:
   - Death
   - Enemy
   - Wall
+  - Win
   layers:
   - Default
   - TransparentFX

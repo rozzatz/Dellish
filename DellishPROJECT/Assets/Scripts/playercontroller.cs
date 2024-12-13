@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -88,12 +89,24 @@ public class playercontroller : MonoBehaviour
         SceneManager.LoadScene(0); // Reload the scene to restart the game
     }
 
+    void HandleGameOverW()
+    {
+        GameOver = true;
+        Debug.Log("Game Win");
+        SceneManager.LoadScene(4); // Reload the scene to restart the game
+    }
+
 
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
             IsOnGround = true;
+        }
+
+        if (collision.gameObject.CompareTag("Win"))
+        {
+            HandleGameOverW();
         }
 
         if (collision.gameObject.CompareTag("Enemy") && !Invincible)
