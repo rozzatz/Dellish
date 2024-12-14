@@ -9,7 +9,7 @@ public class collectable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Playa"))
         {
-            coin = coin + 1;
+            coin = 1 +coin;
 
             Debug.Log(coin);
 
