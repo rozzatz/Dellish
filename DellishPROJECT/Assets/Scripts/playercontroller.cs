@@ -86,7 +86,7 @@ public class playercontroller : MonoBehaviour
     {
         GameOver = true;
         Debug.Log("Game Over");
-        SceneManager.LoadScene(0); // Reload the scene to restart the game
+        SceneManager.LoadScene(1); // Reload the scene to restart the game
     }
 
     void HandleGameOverW()
