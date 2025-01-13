@@ -10,6 +10,8 @@ TagManager:
   - Wall
   - Win
   - Playa
+  - '!Jumpad'
+  - Jumpad
   layers:
   - Default
   - TransparentFX

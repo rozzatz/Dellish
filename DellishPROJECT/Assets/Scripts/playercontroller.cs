@@ -8,7 +8,7 @@ public class playercontroller : MonoBehaviour
 {
     public float WalkSpeed = 5f;
     public float JumpForce = 10f;
-    bool IsOnGround = true;
+    bool CanJump = true;
     public Rigidbody2D Rb;
     public float health = 3f;
     bool Invincible = false;
@@ -40,10 +40,10 @@ public class playercontroller : MonoBehaviour
             HandleGameOver();
         }
 
-        if (Input.GetKeyDown(jumpKey) && IsOnGround)
+        if (Input.GetKeyDown(jumpKey) && CanJump)
         {
             Rb.velocity = new Vector2(Rb.velocity.x, JumpForce); // Apply jump velocity
-            IsOnGround = false;
+            CanJump = false;
         }
 
         // Invincibility timer
@@ -99,9 +99,14 @@ public class playercontroller : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Ground"))
+        if (collision.gameObject.CompareTag("Jumpad"))
         {
-            IsOnGround = true;
+            CanJump = true;
+        }
+
+        if (collision.gameObject.CompareTag("!Jumpad"))
+        {
+            CanJump = false;
         }
 
         if (collision.gameObject.CompareTag("Win"))
@@ -127,7 +132,30 @@ public class playercontroller : MonoBehaviour
 
     }
 
-    public void ChangeHealth(int amount)
+    void OnTriggerEnter2D(Collider2D collide)
+    {
+        if (collide.gameObject.CompareTag("Jumpad"))
+        {
+            CanJump = true;
+        }
+
+        if (collide.gameObject.CompareTag("Enemy") && !Invincible)
+        {
+            ChangeHealth(-1);
+            Invincible = true;
+            invinvibleTimer = 2f; // Reset invincibility timer
+            Debug.Log("health is" + currentHealth);
+            colorchange();
+
+        }
+
+        if (collide.gameObject.CompareTag("Death") && !Invincible)
+        {
+            HandleGameOver();
+        }
+    }
+
+        public void ChangeHealth(int amount)
     {
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
     }
