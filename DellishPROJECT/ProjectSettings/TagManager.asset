@@ -12,6 +12,7 @@ TagManager:
   - Playa
   - '!Jumpad'
   - Jumpad
+  - coin
   layers:
   - Default
   - TransparentFX

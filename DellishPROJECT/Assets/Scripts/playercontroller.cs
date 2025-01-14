@@ -16,6 +16,7 @@ public class playercontroller : MonoBehaviour
     public bool GameOver = false;
     public int maxHealth = 3;
     int currentHealth;
+    int coin;
 
     // Customizable key bindings
     public KeyCode jumpKey = KeyCode.Space;
@@ -130,6 +131,15 @@ public class playercontroller : MonoBehaviour
             HandleGameOver();
         }
 
+        if (collision.gameObject.CompareTag("coin"))
+        {
+            coin += 1;
+
+            Debug.Log(coin);
+
+
+        }
+
     }
 
     void OnTriggerEnter2D(Collider2D collide)
@@ -153,6 +163,16 @@ public class playercontroller : MonoBehaviour
         {
             HandleGameOver();
         }
+
+        if (collide.gameObject.CompareTag("coin"))
+        {
+            coin += 1;
+
+            Debug.Log(coin);
+
+
+        }
+
     }
 
         public void ChangeHealth(int amount)
