@@ -16,7 +16,7 @@ public class playercontroller : MonoBehaviour
     public bool GameOver = false;
     public int maxHealth = 3;
     int currentHealth;
-    int coin;
+    public int coin;
 
     // Customizable key bindings
     public KeyCode jumpKey = KeyCode.Space;
