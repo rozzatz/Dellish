@@ -572,7 +572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c3ed8c9ffda4c41bc8aab50b54c36a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinText: {fileID: 0}
+  coinText: {fileID: 205006297}
 --- !u!4 &254487953
 Transform:
   m_ObjectHideFlags: 0
@@ -3578,6 +3578,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1459482886}
     m_Modifications:
+    - target: {fileID: 1255812798438662150, guid: f5aa60e8c38682d4481331e706a42d91, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2706659469123188975, guid: f5aa60e8c38682d4481331e706a42d91, type: 3}
       propertyPath: Rb
       value: 

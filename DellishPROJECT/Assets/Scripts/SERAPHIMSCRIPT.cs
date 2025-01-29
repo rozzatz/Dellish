@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    public Transform player;  // Reference to the player object
-    public float moveSpeed = 2f;  // Speed at which the enemy moves toward the player
+    private Transform player;  // Reference to the player object
+    public float moveSpeed = 5f;  // Speed at which the enemy moves toward the player
     public float detectionRange = 5f;  // Range within which the enemy detects the player
     private Vector3 startPosition;  // The original position of the enemy
     private bool playerIsMoving = false;  // Flag to check if player is moving
@@ -13,6 +13,8 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        moveSpeed = moveSpeed * 10000;
+        player = GameObject.FindGameObjectWithTag("Playa").transform;
         rb = GetComponent<Rigidbody2D>();  // Initialize the Rigidbody2D
         startPosition = transform.position;  // Save the enemy's starting position
     }
@@ -37,13 +39,13 @@ public class EnemyController : MonoBehaviour
         {
             // Move towards the player
             Vector2 direction = (player.position - transform.position).normalized;
-            rb.velocity = direction * moveSpeed;
+            rb.velocity = direction * moveSpeed * Time.deltaTime;
         }
         else
         {
             // Return to the starting position if the player is out of range
             Vector2 direction = (startPosition - transform.position).normalized;
-            rb.velocity = direction * moveSpeed;
+            rb.velocity = direction * moveSpeed * Time.deltaTime;
         }
     }
 

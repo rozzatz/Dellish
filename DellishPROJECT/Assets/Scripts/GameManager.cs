@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     private playercontroller player;
-    public TextMeshPro coinText;
+    public TMP_Text coinText;
     // Start is called before the first frame update
     void Start()
     {
