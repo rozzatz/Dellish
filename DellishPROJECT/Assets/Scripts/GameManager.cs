@@ -19,5 +19,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         coinText.text = "Coin: " + player.coin;
+        
     }
 }
