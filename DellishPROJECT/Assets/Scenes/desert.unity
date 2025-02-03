@@ -5624,6 +5624,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScreenResController
       objectReference: {fileID: 0}
+    - target: {fileID: 3089645540353119200, guid: 582296f11056d4a4781a9cd067f5a0da, type: 3}
+      propertyPath: maxWidthPixel
+      value: 3200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3089645540353119200, guid: 582296f11056d4a4781a9cd067f5a0da, type: 3}
+      propertyPath: maxHeightPixel
+      value: 1800
+      objectReference: {fileID: 0}
     - target: {fileID: 4875776221680786118, guid: 582296f11056d4a4781a9cd067f5a0da, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.02814484
