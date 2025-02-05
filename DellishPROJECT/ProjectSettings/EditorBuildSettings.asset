@@ -27,12 +27,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 1.unity
     guid: 22c7f4107371dce4cae0299b4e97dced
   - enabled: 1
-    path: Assets/Scenes/Tutorial 1.unity
-    guid: e9f2534135abef241821db8a81e971bc
+    path: Assets/Scenes/tutorial 1.unity
+    guid: 3a04e4333040c374998875a0b5dc6f37
   - enabled: 1
     path: Assets/Scenes/Tutorial 2.unity
     guid: c632bee683c15aa4dbd69c9bfad56839
   - enabled: 1
     path: Assets/Scenes/Tutorial 3.unity
     guid: b147a70d9e222e842abdfde26d2323c1
+  - enabled: 1
+    path: Assets/Scenes/Tutorial seraphim.unity
+    guid: e9f2534135abef241821db8a81e971bc
   m_configObjects: {}
