@@ -17,6 +17,8 @@ public class playercontroller : MonoBehaviour
     public int maxHealth = 3;
     int currentHealth;
     public int coin;
+    public int sceneLose = 1;
+    public int sceneWin = 4;
 
     // Customizable key bindings
     public KeyCode jumpKey = KeyCode.Space;
@@ -87,14 +89,14 @@ public class playercontroller : MonoBehaviour
     {
         GameOver = true;
         Debug.Log("Game Over");
-        SceneManager.LoadScene(1); // Reload the scene to restart the game
+        SceneManager.LoadScene(sceneLose); // Reload the scene to restart the game
     }
 
     void HandleGameOverW()
     {
         GameOver = true;
         Debug.Log("Game Win");
-        SceneManager.LoadScene(4); // Reload the scene to restart the game
+        SceneManager.LoadScene(sceneWin); // Reload the scene to restart the game
     }
 
 
