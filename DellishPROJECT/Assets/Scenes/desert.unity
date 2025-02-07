@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3015,7 +3014,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3283477664994099871, guid: 18cac755f6ac20a438396675e1b790e0, type: 3}
       propertyPath: moveSpeed
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3283477664994099871, guid: 18cac755f6ac20a438396675e1b790e0, type: 3}
       propertyPath: detectionRange
@@ -5693,6 +5692,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 84622039}
+    - target: {fileID: 448814102939399455, guid: 8af21e9fe6f26064a8874e13ef7ef4fc, type: 3}
+      propertyPath: xOffset
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 448814102939399455, guid: 8af21e9fe6f26064a8874e13ef7ef4fc, type: 3}
       propertyPath: FollowSpeed
       value: 2000
