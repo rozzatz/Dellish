@@ -13,8 +13,8 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: DellishPROJECT
-  defaultCursor: {fileID: 0}
+  productName: Dellish
+  defaultCursor: {fileID: -8328923581568760697, guid: 993d9c3bd280bb949aba8c518c6837c9, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.2735849, g: 0.24425548, b: 0.21551263, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -283,7 +283,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: -8328923581568760697, guid: bd8c8c4bdeea4794589ad1201e254e58, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons:
   - m_BuildTarget: tvOS
     m_Icons:
