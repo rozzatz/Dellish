@@ -13,7 +13,7 @@ public class CamFollowXonly : MonoBehaviour
     {
 
 
-        Vector3 newPos = new Vector3(target.position.x + xOffset,  yOffset, -10f);
+        Vector3 newPos = new Vector3(target.position.x + xOffset,  yOffset,-10f);
         transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
 
     }

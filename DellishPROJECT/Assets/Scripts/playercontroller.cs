@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,9 +20,12 @@ public class playercontroller : MonoBehaviour
     public int coin;
     public int sceneLose = 1;
     public int sceneWin = 4;
+    public int SceneCurrent;
 
     // Customizable key bindings
     public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode ResetKey = KeyCode.R;
+
 
     // Reference to the sprite renderer to flip the sprite
     private SpriteRenderer spriteRenderer;
@@ -49,6 +53,11 @@ public class playercontroller : MonoBehaviour
             CanJump = false;
         }
 
+        if (Input.GetKeyDown(ResetKey))
+        {
+            SceneManager.LoadScene(SceneCurrent);
+        }
+
         // Invincibility timer
         if (Invincible)
         {
@@ -64,6 +73,8 @@ public class playercontroller : MonoBehaviour
         {
             HandleGameOver();
         }
+
+      
     }
 
     void HandleMovement()
@@ -138,7 +149,7 @@ public class playercontroller : MonoBehaviour
             coin += 1;
 
             Debug.Log(coin);
-
+            
 
         }
 

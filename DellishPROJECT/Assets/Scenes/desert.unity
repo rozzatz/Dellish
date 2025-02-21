@@ -2698,6 +2698,10 @@ PrefabInstance:
       propertyPath: sceneLose
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7455899877627352740, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
+      propertyPath: SceneCurrent
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 61.11428
@@ -3013,8 +3017,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3283477664994099871, guid: 18cac755f6ac20a438396675e1b790e0, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 84622039}
+    - target: {fileID: 3283477664994099871, guid: 18cac755f6ac20a438396675e1b790e0, type: 3}
       propertyPath: moveSpeed
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 3283477664994099871, guid: 18cac755f6ac20a438396675e1b790e0, type: 3}
       propertyPath: detectionRange
@@ -3022,7 +3030,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3748921246222461871, guid: 18cac755f6ac20a438396675e1b790e0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.3
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 3748921246222461871, guid: 18cac755f6ac20a438396675e1b790e0, type: 3}
       propertyPath: m_LocalPosition.y
