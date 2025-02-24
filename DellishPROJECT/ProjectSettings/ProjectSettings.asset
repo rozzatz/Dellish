@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: Dellish
-  defaultCursor: {fileID: -8328923581568760697, guid: 993d9c3bd280bb949aba8c518c6837c9, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.2735849, g: 0.24425548, b: 0.21551263, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -103,7 +103,7 @@ PlayerSettings:
   xboxEnableFitness: 0
   visibleInBackground: 1
   allowFullscreenSwitch: 0
-  fullscreenMode: 3
+  fullscreenMode: 0
   xboxSpeechDB: 0
   xboxEnableHeadOrientation: 0
   xboxEnableGuest: 0
