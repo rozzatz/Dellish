@@ -25,6 +25,9 @@ public class playercontroller : MonoBehaviour
     // Customizable key bindings
     public KeyCode jumpKey = KeyCode.Space;
     public KeyCode ResetKey = KeyCode.R;
+    public KeyCode MenuKey = KeyCode.Escape;
+
+
 
 
     // Reference to the sprite renderer to flip the sprite
@@ -57,6 +60,13 @@ public class playercontroller : MonoBehaviour
         {
             SceneManager.LoadScene(SceneCurrent);
         }
+
+        if (Input.GetKeyDown(MenuKey))
+        {
+            SceneManager.LoadScene(0);
+        }
+
+
 
         // Invincibility timer
         if (Invincible)
