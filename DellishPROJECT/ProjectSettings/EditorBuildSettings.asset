@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/game over screen.unity
     guid: eccb4dfae808f114f90cbc2202a2968d
   - enabled: 1
-    path: Assets/Scenes/desert.unity
+    path: Assets/Scenes/Level 1.unity
     guid: 3416bc8230eb8524b99ee8e05b976e8a
   - enabled: 1
     path: Assets/Scenes/cutscene.unity
@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Hub.unity
     guid: 6c0c3e7763c09d744ae2851032eefef3
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Level 2.unity
     guid: 22c7f4107371dce4cae0299b4e97dced
   - enabled: 1
     path: Assets/Scenes/Tutorial 1.unity
