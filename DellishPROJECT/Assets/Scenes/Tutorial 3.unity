@@ -697,6 +697,10 @@ PrefabInstance:
       value: Square
       objectReference: {fileID: 0}
     - target: {fileID: 7455899877627352740, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
+      propertyPath: sceneWin
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7455899877627352740, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: sceneLose
       value: 9
       objectReference: {fileID: 0}
@@ -2620,7 +2624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46090739fc43947428ca55c4f76e391b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: 10
+  scene: 11
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
