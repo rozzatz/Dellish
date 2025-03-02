@@ -27,7 +27,7 @@ public class playercontroller : MonoBehaviour
     public KeyCode ResetKey = KeyCode.R;
     public KeyCode MenuKey = KeyCode.Escape;
 
-
+    
 
 
     // Reference to the sprite renderer to flip the sprite
