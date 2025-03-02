@@ -139,25 +139,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square
       objectReference: {fileID: 0}
-    - target: {fileID: 6024367196443037261, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
-      propertyPath: m_TagString
-      value: Playa
-      objectReference: {fileID: 0}
-    - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.35652035
-      objectReference: {fileID: 0}
-    - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.17947148
-      objectReference: {fileID: 0}
     - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.025
       objectReference: {fileID: 0}
     - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.363
+      value: -0.67
       objectReference: {fileID: 0}
     - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1577,6 +1565,10 @@ PrefabInstance:
     - target: {fileID: 5896865233010800236, guid: 6a01e846cf0a3cc46846c033863586b4, type: 3}
       propertyPath: m_Name
       value: Anglasse(playable)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5896865233010800236, guid: 6a01e846cf0a3cc46846c033863586b4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

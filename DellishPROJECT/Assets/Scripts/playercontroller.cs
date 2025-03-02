@@ -22,9 +22,14 @@ public class playercontroller : MonoBehaviour
     public int sceneWin = 4;
     public int SceneCurrent;
 
+    public float normalDrag = 0f;
+    private bool WDown;
+    public float IncreasedDrag = 5f;
+
     // Customizable key bindings
     public KeyCode jumpKey = KeyCode.Space;
     public KeyCode ResetKey = KeyCode.R;
+    public KeyCode FloatKey = KeyCode.W;
     public KeyCode MenuKey = KeyCode.Escape;
 
     
@@ -52,6 +57,7 @@ public class playercontroller : MonoBehaviour
 
         if (Input.GetKeyDown(jumpKey) && CanJump)
         {
+            Rb.drag = normalDrag;
             Rb.velocity = new Vector2(Rb.velocity.x, JumpForce); // Apply jump velocity
             CanJump = false;
         }
@@ -66,6 +72,16 @@ public class playercontroller : MonoBehaviour
             SceneManager.LoadScene(0);
         }
 
+         if (Input.GetKeyDown(FloatKey))
+        {
+            Rb.drag = IncreasedDrag;
+            WDown = true;
+        }
+        else if  (Input.GetKeyUp(FloatKey) && WDown == true )
+        {
+            Rb.drag = normalDrag;
+            WDown = false;
+        }
 
 
         // Invincibility timer
@@ -104,6 +120,9 @@ public class playercontroller : MonoBehaviour
         {
             spriteRenderer.flipX = false;   // Facing left
         }
+
+          
+       
     }
 
     void HandleGameOver()
