@@ -23,13 +23,18 @@ public class playercontroller : MonoBehaviour
     public int SceneCurrent;
 
     public float normalDrag = 0f;
+
     private bool WDown;
+    private bool SDown;
     public float IncreasedDrag = 5f;
 
+    public float normalGrav = 2f;
+    public float IncreasedGrav = 5f;
     // Customizable key bindings
     public KeyCode jumpKey = KeyCode.Space;
     public KeyCode ResetKey = KeyCode.R;
     public KeyCode FloatKey = KeyCode.W;
+    public KeyCode SlamKey = KeyCode.S;
     public KeyCode MenuKey = KeyCode.Escape;
 
     
@@ -57,7 +62,7 @@ public class playercontroller : MonoBehaviour
 
         if (Input.GetKeyDown(jumpKey) && CanJump)
         {
-            Rb.drag = normalDrag;
+           
             Rb.velocity = new Vector2(Rb.velocity.x, JumpForce); // Apply jump velocity
             CanJump = false;
         }
@@ -82,6 +87,18 @@ public class playercontroller : MonoBehaviour
             Rb.drag = normalDrag;
             WDown = false;
         }
+
+        if (Input.GetKeyDown(SlamKey))
+        {
+            Rb.gravityScale = IncreasedGrav;
+            SDown = true;
+        }
+        else if (Input.GetKeyUp(SlamKey) && SDown == true)
+        {
+            Rb.gravityScale = normalGrav;
+            SDown = false;
+        }
+
 
 
         // Invincibility timer
@@ -164,7 +181,7 @@ public class playercontroller : MonoBehaviour
             Invincible = true;
             invinvibleTimer = 2f; // Reset invincibility timer
             Debug.Log("health is" + currentHealth);
-            colorchange();
+            Colorchange();
 
         }
 
@@ -197,7 +214,7 @@ public class playercontroller : MonoBehaviour
             Invincible = true;
             invinvibleTimer = 2f; // Reset invincibility timer
             Debug.Log("health is" + currentHealth);
-            colorchange();
+            Colorchange();
 
         }
 
@@ -222,7 +239,7 @@ public class playercontroller : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
     }
 
-    IEnumerator colorchange()
+    IEnumerator Colorchange()
         {
     Color originalcolor = spriteRenderer.color;
     spriteRenderer.color = Color.blue;

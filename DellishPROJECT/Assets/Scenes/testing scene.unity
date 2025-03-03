@@ -140,12 +140,20 @@ PrefabInstance:
       value: Square
       objectReference: {fileID: 0}
     - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.261
+      objectReference: {fileID: 0}
+    - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.025
+      value: -8.1049
       objectReference: {fileID: 0}
     - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.67
+      value: -1.3105
       objectReference: {fileID: 0}
     - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1515,20 +1523,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5661109121959679889, guid: 6a01e846cf0a3cc46846c033863586b4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.048264913
-      objectReference: {fileID: 0}
-    - target: {fileID: 5661109121959679889, guid: 6a01e846cf0a3cc46846c033863586b4, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.04844455
-      objectReference: {fileID: 0}
-    - target: {fileID: 5661109121959679889, guid: 6a01e846cf0a3cc46846c033863586b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.5145
+      value: -8.2248
       objectReference: {fileID: 0}
     - target: {fileID: 5661109121959679889, guid: 6a01e846cf0a3cc46846c033863586b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5784
+      value: -1.5476
       objectReference: {fileID: 0}
     - target: {fileID: 5661109121959679889, guid: 6a01e846cf0a3cc46846c033863586b4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1565,10 +1565,6 @@ PrefabInstance:
     - target: {fileID: 5896865233010800236, guid: 6a01e846cf0a3cc46846c033863586b4, type: 3}
       propertyPath: m_Name
       value: Anglasse(playable)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896865233010800236, guid: 6a01e846cf0a3cc46846c033863586b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
