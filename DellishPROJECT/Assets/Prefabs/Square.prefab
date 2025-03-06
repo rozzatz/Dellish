@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 97401122, guid: 3333988f4e5ec864da334294e630a56d, type: 3}
+  m_Sprite: {fileID: -1924058398, guid: d5ca7893235908740bdc80133818af72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -138,9 +138,12 @@ MonoBehaviour:
   SceneCurrent: 0
   normalDrag: 0
   IncreasedDrag: 15
+  normalGrav: 2
+  IncreasedGrav: 5
   jumpKey: 32
   ResetKey: 114
   FloatKey: 119
+  SlamKey: 115
   MenuKey: 27
 --- !u!70 &538763958632398538
 CapsuleCollider2D:
@@ -174,6 +177,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.1333333, y: 1.7333333}
+  m_Offset: {x: 0.14070165, y: -0.16080213}
+  m_Size: {x: 1.4147365, y: 2.0549374}
   m_Direction: 0
