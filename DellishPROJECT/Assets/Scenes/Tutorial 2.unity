@@ -719,7 +719,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6024367196443037261, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_Name
-      value: Square
+      value: Dellish
       objectReference: {fileID: 0}
     - target: {fileID: 7455899877627352740, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: sceneLose

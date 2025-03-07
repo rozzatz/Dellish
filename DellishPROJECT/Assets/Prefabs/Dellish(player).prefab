@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8180545711544511510}
   - component: {fileID: 3252709947121995507}
   - component: {fileID: 6038895544188433907}
+  - component: {fileID: 8458086205904282849}
   m_Layer: 0
   m_Name: Dellish(player)
   m_TagString: Playa
@@ -181,3 +182,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1.1333333, y: 1.7333333}
   m_Direction: 0
+--- !u!95 &8458086205904282849
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7947622587862868494}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9dddb8d2778ce5e4da8b6386714795f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
