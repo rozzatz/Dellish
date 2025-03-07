@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7116135728350639930
 Transform:
   m_ObjectHideFlags: 0
@@ -129,6 +129,7 @@ MonoBehaviour:
   WalkSpeed: 10
   JumpForce: 13.5
   Rb: {fileID: 8180545711544511510}
+  Anim: {fileID: 0}
   health: 3
   GameOver: 0
   maxHealth: 3
@@ -136,8 +137,14 @@ MonoBehaviour:
   sceneLose: 13
   sceneWin: 4
   SceneCurrent: 13
+  normalDrag: 0
+  IncreasedDrag: 5
+  normalGrav: 2
+  IncreasedGrav: 5
   jumpKey: 32
   ResetKey: 114
+  FloatKey: 119
+  SlamKey: 115
   MenuKey: 27
 --- !u!70 &6038895544188433907
 CapsuleCollider2D:

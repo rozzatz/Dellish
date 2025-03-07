@@ -11,6 +11,7 @@ public class playercontroller : MonoBehaviour
     public float JumpForce = 10f;
     bool CanJump = true;
     public Rigidbody2D Rb;
+    public Animator Anim;
     public float health = 3f;
     bool Invincible = false;
     float invinvibleTimer = 2f;
@@ -38,11 +39,7 @@ public class playercontroller : MonoBehaviour
     public KeyCode MenuKey = KeyCode.Escape;
 
     //anim bools remove public eventuslly
-   public bool Isfloating;
-    public bool IsDiving;
-     public bool IsRunning;
-    public  bool IsJumping;
-    public bool IsHurt;
+
 
 
     
@@ -57,6 +54,7 @@ public class playercontroller : MonoBehaviour
         // Initialize Rigidbody2D and SpriteRenderer
         Rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        Anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -73,7 +71,7 @@ public class playercontroller : MonoBehaviour
            
             Rb.velocity = new Vector2(Rb.velocity.x, JumpForce); // Apply jump velocity
             CanJump = false;
-            IsJumping = true;
+            Anim.SetBool("IsJumping",true);
         }
 
         if (Input.GetKeyDown(ResetKey))
@@ -90,26 +88,28 @@ public class playercontroller : MonoBehaviour
         {
             Rb.drag = IncreasedDrag;
             WDown = true;
-            Isfloating = true;
+           
+            Anim.SetBool("Isfloating", true);
         }
         else if  (Input.GetKeyUp(FloatKey) && WDown == true )
         {
             Rb.drag = normalDrag;
             WDown = false;
-            Isfloating = false;
+           
+            Anim.SetBool("Isfloating", false);
         }
 
         if (Input.GetKeyDown(SlamKey))
         {
             Rb.gravityScale = IncreasedGrav;
             SDown = true;
-            IsDiving = true;
+            Anim.SetBool("IsDiving", true);
         }
         else if (Input.GetKeyUp(SlamKey) && SDown == true)
         {
             Rb.gravityScale = normalGrav;
             SDown = false;
-            IsDiving = false;
+            Anim.SetBool("IsDiving", false);
         }
 
 
@@ -147,16 +147,17 @@ public class playercontroller : MonoBehaviour
         {
             spriteRenderer.flipX = false;  // Facing right
 
-            IsRunning = true;
+         
+            Anim.SetBool("IsRunning", true);
         }
         else if (moveInput < 0)
         {
             spriteRenderer.flipX = true;   // Facing left
-            IsRunning = true;
+            Anim.SetBool("IsRunning", true);
         }
         else
         {
-            IsRunning = false;
+            Anim.SetBool("IsRunning", false);
         }
 
           
@@ -183,13 +184,13 @@ public class playercontroller : MonoBehaviour
         if (collision.gameObject.CompareTag("Jumpad"))
         {
             CanJump = true;
-            IsJumping = false;
+            Anim.SetBool("IsJumping", false);
         }
 
         if (collision.gameObject.CompareTag("!Jumpad"))
         {
             CanJump = false;
-            IsJumping = false;
+            Anim.SetBool("IsJumping", false);
         }
 
         if (collision.gameObject.CompareTag("Win"))
@@ -266,9 +267,9 @@ public class playercontroller : MonoBehaviour
         {
     Color originalcolor = spriteRenderer.color;
     spriteRenderer.color = Color.blue;
-        IsHurt = true;
-    yield return new WaitForSeconds(.5f);
+        Anim.SetBool("IsHurt", true);
+        yield return new WaitForSeconds(.5f);
     spriteRenderer.color = originalcolor;
-        IsHurt = false;
-        }
+        Anim.SetBool("IsHurt", false);
+    }
 }

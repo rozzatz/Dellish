@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1819571418908877713}
   - component: {fileID: 7455899877627352740}
   - component: {fileID: 538763958632398538}
+  - component: {fileID: 7073580354889547840}
   m_Layer: 0
   m_Name: Square
   m_TagString: Playa
@@ -129,6 +130,7 @@ MonoBehaviour:
   WalkSpeed: 10
   JumpForce: 13.5
   Rb: {fileID: 1819571418908877713}
+  Anim: {fileID: 0}
   health: 3
   GameOver: 0
   maxHealth: 3
@@ -180,3 +182,24 @@ CapsuleCollider2D:
   m_Offset: {x: 0.14070165, y: -0.16080213}
   m_Size: {x: 1.4147365, y: 2.0549374}
   m_Direction: 0
+--- !u!95 &7073580354889547840
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6024367196443037261}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9dddb8d2778ce5e4da8b6386714795f7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
