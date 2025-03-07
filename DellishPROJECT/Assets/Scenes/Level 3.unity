@@ -4677,11 +4677,11 @@ PrefabInstance:
       objectReference: {fileID: 682909648}
     - target: {fileID: 7455899877627352740, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: sceneLose
-      value: 9
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7455899877627352740, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: SceneCurrent
-      value: 9
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8535479435674016960, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_LocalPosition.x
