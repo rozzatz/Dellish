@@ -726,6 +726,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 988823422}
+  - {fileID: 1459482886}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &205006297 stripped
@@ -2695,6 +2696,10 @@ PrefabInstance:
       value: Dellish
       objectReference: {fileID: 0}
     - target: {fileID: 7455899877627352740, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
+      propertyPath: JumpForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7455899877627352740, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: sceneLose
       value: 2
       objectReference: {fileID: 0}
@@ -3295,14 +3300,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1459482885}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -61.11428, y: 20.059635, z: 331.1063}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 502822823}
   - {fileID: 84622039}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 180996056}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1469320713
 PrefabInstance:
@@ -5653,7 +5658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5060410005636695961, guid: 8af21e9fe6f26064a8874e13ef7ef4fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 2.36
       objectReference: {fileID: 0}
     - target: {fileID: 5060410005636695961, guid: 8af21e9fe6f26064a8874e13ef7ef4fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26775,5 +26780,4 @@ SceneRoots:
   - {fileID: 2856614019027418822}
   - {fileID: 1780791156}
   - {fileID: 1571087158}
-  - {fileID: 1459482886}
   - {fileID: 180996056}
