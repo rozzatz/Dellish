@@ -184,12 +184,14 @@ public class playercontroller : MonoBehaviour
         if (collision.gameObject.CompareTag("Jumpad"))
         {
             CanJump = true;
+            Anim.SetBool("CanJump", true);
             Anim.SetBool("IsJumping", false);
         }
 
         if (collision.gameObject.CompareTag("!Jumpad"))
         {
             CanJump = false;
+            Anim.SetBool("CanJump", false);
             Anim.SetBool("IsJumping", false);
         }
 
@@ -230,6 +232,8 @@ public class playercontroller : MonoBehaviour
         if (collide.gameObject.CompareTag("Jumpad"))
         {
             CanJump = true;
+            Anim.SetBool("CanJump", true);
+
         }
 
         if (collide.gameObject.CompareTag("Enemy") && !Invincible)
