@@ -121,7 +121,7 @@ public class playercontroller : MonoBehaviour
             if (invinvibleTimer <= 0)
             {
                 Invincible = false;
-                invinvibleTimer = 2f;
+                invinvibleTimer = .01f;
             }
         }
 
@@ -207,7 +207,7 @@ public class playercontroller : MonoBehaviour
             Invincible = true;
             invinvibleTimer = 2f; // Reset invincibility timer
             Debug.Log("health is" + currentHealth);
-           Colorchange();
+           StartCoroutine(Colorchange());
 
         }
 
@@ -270,10 +270,12 @@ public class playercontroller : MonoBehaviour
     IEnumerator Colorchange()
         {
     Color originalcolor = spriteRenderer.color;
-    spriteRenderer.color = Color.blue;
+    spriteRenderer.color = Color.red;
+        GetComponent<Renderer>().material.color = Color.red;
         Anim.SetBool("IsHurt", true);
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(.2f);
     spriteRenderer.color = originalcolor;
+        GetComponent<Renderer>().material.color = originalcolor;
         Anim.SetBool("IsHurt", false);
     }
 }
