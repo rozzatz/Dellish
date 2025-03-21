@@ -121,7 +121,7 @@ public class playercontroller : MonoBehaviour
             if (invinvibleTimer <= 0)
             {
                 Invincible = false;
-                invinvibleTimer = .01f;
+                invinvibleTimer = .1f;
             }
         }
 
