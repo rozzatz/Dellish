@@ -1677,6 +1677,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.14970234
       objectReference: {fileID: 0}
+    - target: {fileID: 1819571418908877713, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: a932d1c6b832dbc44953a7f54e61b32c, type: 2}
     - target: {fileID: 6024367196443037261, guid: 8c286b1d5abe2f74b8accfe5beb0e8e2, type: 3}
       propertyPath: m_Name
       value: Square
