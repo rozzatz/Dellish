@@ -7,6 +7,8 @@ public class CameraSwitcher : MonoBehaviour
     private CAMERAFOLLOW mainCam;
     public float xMoveAdd;
     public float yMoveAdd;
+    public float xMoveOffset;
+    public float yMoveOffset;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,8 @@ public class CameraSwitcher : MonoBehaviour
         {
             mainCam.xMove += xMoveAdd;
             mainCam.yMove += yMoveAdd;
+            mainCam.xOffset += xMoveOffset;
+            mainCam.yOffset += yMoveOffset;
         }
     }
 }
