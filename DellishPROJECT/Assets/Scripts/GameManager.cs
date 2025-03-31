@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     private playercontroller player;
     public TMP_Text coinText;
+    public TMP_Text healthText;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {        
         coinText.text = "Coin: " + player.coin;
-        
+        healthText.text = "Health: " + player.currentHealth;
+
     }
 }

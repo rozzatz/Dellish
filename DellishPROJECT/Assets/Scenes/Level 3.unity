@@ -4328,6 +4328,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1062025999 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7971228433337725502, guid: 474afdade22e5ca4fb3772dbbbde24ce, type: 3}
+  m_PrefabInstance: {fileID: 1914109070}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1097874125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6887,8 +6898,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8611989847302607066, guid: 474afdade22e5ca4fb3772dbbbde24ce, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 474afdade22e5ca4fb3772dbbbde24ce, type: 3}
@@ -7537,6 +7547,10 @@ PrefabInstance:
       propertyPath: coinText
       value: 
       objectReference: {fileID: 909363700}
+    - target: {fileID: 1458545285608575694, guid: cac14b00d27da104a8789c37b6d6fbba, type: 3}
+      propertyPath: healthText
+      value: 
+      objectReference: {fileID: 1062025999}
     - target: {fileID: 3715602949647147694, guid: cac14b00d27da104a8789c37b6d6fbba, type: 3}
       propertyPath: m_Name
       value: GameManager

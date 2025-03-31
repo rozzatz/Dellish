@@ -17,7 +17,7 @@ public class playercontroller : MonoBehaviour
     float invinvibleTimer = 2f;
     public bool GameOver = false;
     public int maxHealth = 3;
-    int currentHealth;
+    public int currentHealth;
     public int coin;
     public int sceneLose = 1;
     public int sceneWin = 4;
@@ -207,6 +207,7 @@ public class playercontroller : MonoBehaviour
             Invincible = true;
             invinvibleTimer = 2f; // Reset invincibility timer
             Debug.Log("health is" + currentHealth);
+
            StartCoroutine(Colorchange());
 
         }
